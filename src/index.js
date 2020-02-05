@@ -13,6 +13,17 @@ import reduxThunk from 'redux-thunk';
 import { AUTHENTICATED } from './actions';
 import requireAuth from './components/require_auth';
 import noRequireAuth from './components/no_require_auth';
+import Echo from "laravel-echo"
+
+window.Pusher = require('pusher-js');
+
+window.Echo = new Echo({
+  broadcaster: 'pusher',
+  key: 'DnDTome',
+  wsHost: window.location.hostname,
+  wsPort: 6001,
+  disableStats: true,
+});
 
 const createStoreWithMiddleware = applyMiddleware(reduxThunk)(createStore);
 const store = createStoreWithMiddleware(reducers);
