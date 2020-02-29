@@ -10,8 +10,8 @@ class Landing extends Component {
             <br/>
             <h1 className="header center orange-text">Welcome to The Hub</h1>
             <div className="row center">
-              <div className="col s3 offset-s4  center ">
-                <img className="responsive-img center s3" src={logo} alt="DnDTome Logo"/>
+              <div className="col s2 offset-s5  center">
+                <img className="circle responsive-img center s3" src={logo} alt="DnDTome Logo"/>
 
               </div>
               <h5 className="header col s12 orange-text">The Place for controlling your DnDTomeApp</h5>

@@ -1,0 +1,16 @@
+version: '3.7'
+
+services:
+
+  tomesite:
+    container_name: tomesite
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - '.:/app'
+      - '/app/node_modules'
+    ports:
+      - '3001:3000'
+    environment:
+      - NODE_ENV=development
