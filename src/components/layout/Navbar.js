@@ -23,12 +23,7 @@ class Navbar extends Component {
               <li>
                 <Link
                   to="/register"
-                  style={{
-                    width: "140px",
-                    borderRadius: "3px",
-                    letterSpacing: "1.5px"
-                  }}
-                  className="btn waves-effect waves-light hoverable blue accent-3"
+                  className="waves-effect waves-light btn-small btn-nav  black-text"
                 >
                   Register
                 </Link>
@@ -36,12 +31,7 @@ class Navbar extends Component {
               <li>
                 <Link
                   to="/login"
-                  style={{
-                    width: "140px",
-                    borderRadius: "3px",
-                    letterSpacing: "1.5px"
-                  }}
-                  className="btn btn-flat waves-effect white black-text"
+                  className="waves-effect waves-light btn-small btn-nav black-text"
                 >
                   Log In
                 </Link>

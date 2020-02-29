@@ -10,17 +10,17 @@ class Landing extends Component {
             <br/>
             <h1 className="header center orange-text">Welcome to The Hub</h1>
             <div className="row center">
-              <div className="col s2 offset-s5 center-align ">
-                <img className="responsive-img" src={logo} alt="DnDTome Logo"/>
+              <div className="col s3 offset-s4  center ">
+                <img className="responsive-img center s3" src={logo} alt="DnDTome Logo"/>
 
               </div>
-              <h5 className="header col s12 light">The Place for controlling your DnDTomeApp</h5>
+              <h5 className="header col s12 orange-text">The Place for controlling your DnDTomeApp</h5>
             </div>
             {/*<div className="row center">*/}
             {/*  <a href="http://materializecss.com/getting-started.html" id="download-button"*/}
             {/*     className="btn-large waves-effect waves-light orange">Get Started</a>*/}
             {/*</div>*/}
-            <br/>
+
           </div>
         </div>
         <div className="container">
@@ -28,7 +28,7 @@ class Landing extends Component {
 
             <div className="row">
               <div className="col s12 m4">
-                <div className="icon-block">
+                <div className="icon-block z-depth-5 tome-text-light-1">
                   <h2 className="center light-blue-text"><i className="material-icons">flash_on</i></h2>
                   <h5 className="center">Push Data to your App</h5>
 
@@ -40,8 +40,8 @@ class Landing extends Component {
                 </div>
               </div>
 
-              <div className="col s12 m4">
-                <div className="icon-block">
+              <div className="col s12 m4 ">
+                <div className="icon-block z-depth-5 tome-text-light-1">
                   <h2 className="center light-blue-text"><i className="material-icons">group</i></h2>
                   <h5 className="center">Sync with your group</h5>
 
@@ -53,10 +53,10 @@ class Landing extends Component {
                 </div>
               </div>
 
-              <div className="col s12 m4">
-                <div className="icon-block">
+              <div className="col s12 m4 ">
+                <div className="icon-block z-depth-5 tome-text-light-1">
                   <h2 className="center light-blue-text"><i className="material-icons">settings</i></h2>
-                  <h5 className="center">Realtime Sessions</h5>
+                  <h5 className="center">Realtime Session Tools</h5>
 
                   <p className="light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                     incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
