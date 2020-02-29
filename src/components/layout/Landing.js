@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import {Link} from "react-router-dom";
+import logo from '../../assets/img/dice_icon.png'
 
 class Landing extends Component {
   render() {
@@ -7,16 +7,20 @@ class Landing extends Component {
       <div>
         <div className="section no-pad-bot" id="index-banner">
           <div className="container">
-            <br/><br/>
+            <br/>
             <h1 className="header center orange-text">Welcome to The Hub</h1>
             <div className="row center">
+              <div className="col s2 offset-s5 center-align ">
+                <img className="responsive-img" src={logo} alt="DnDTome Logo"/>
+
+              </div>
               <h5 className="header col s12 light">The Place for controlling your DnDTomeApp</h5>
             </div>
             {/*<div className="row center">*/}
             {/*  <a href="http://materializecss.com/getting-started.html" id="download-button"*/}
             {/*     className="btn-large waves-effect waves-light orange">Get Started</a>*/}
             {/*</div>*/}
-            <br/><br/>
+            <br/>
           </div>
         </div>
         <div className="container">

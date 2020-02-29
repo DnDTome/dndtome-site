@@ -1,5 +1,7 @@
 import React, {Component} from "react";
 import {Link} from "react-router-dom";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faDiceD20 } from '@fortawesome/free-solid-svg-icons';
 
 class Navbar extends Component {
   render() {
@@ -14,7 +16,7 @@ class Navbar extends Component {
               }}
               className="col s5 brand-logo black-text"
             >
-              <i className="material-icons">code</i>
+              <i className="material-icons"><FontAwesomeIcon icon={faDiceD20} className="animated bounce" /></i>
               DnDTome Hub
             </Link>
             <ul id="nav-mobile" className="right hide-on-med-and-down">

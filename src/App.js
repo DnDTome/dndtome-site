@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import jwt_decode from "jwt-decode";
+import M from "materialize-css";
 import setAuthToken from "./utils/setAuthToken";
 import { setCurrentUser, logoutUser } from "./actions/authActions";
 import { Provider } from "react-redux";
@@ -31,6 +32,10 @@ if (localStorage.jwtToken) {
   }
 }
 class App extends Component {
+  componentDidMount() {
+    // Auto initialize all the things!
+    M.AutoInit();
+  }
   render() {
     return (
       <Provider store={store}>
