@@ -12,5 +12,12 @@ services:
       - '/app/node_modules'
     ports:
       - '3001:3000'
+    networks:
+      - default # this network
     environment:
       - NODE_ENV=development
+
+networks:
+  default: # this network (frontend)
+    external:
+      name: laradock_backend
